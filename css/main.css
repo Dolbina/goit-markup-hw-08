@@ -63,6 +63,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 body {
@@ -74,15 +75,36 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .btn {
@@ -112,7 +134,12 @@ body {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .social {
+    padding-bottom: 30px;
+  }
 }
 
 .social__link {
@@ -233,28 +260,42 @@ body {
 }
 
 .hero__title {
-  width: 696px;
+  width: 360px;
   margin-bottom: 30px;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   color: var(--hero-text-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.35;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.35;
+    width: 696px;
+  }
 }
 
 .hero__container {
   display: block;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .card-list__title {
+  display: block;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -262,6 +303,11 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .card-list__title {
+    text-align: center;
+  }
 }
 
 .card-list__text {
@@ -271,11 +317,22 @@ body {
 .card-list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .card-list__item {
-  width: calc((100% - 90px) / 4);
   display: block;
+}
+@media screen and (min-width: 768px) {
+  .card-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-list__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .card-list__icon {
@@ -292,8 +349,10 @@ body {
   margin-right: auto;
 }
 
-.feature-section {
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .feature-section {
+    padding-bottom: 0;
+  }
 }
 
 .picture__title {
@@ -341,19 +400,35 @@ body {
 }
 
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .team__card {
   background-color: var(--hero-text-color);
-  width: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team__card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__card {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team__subtitle {
@@ -373,7 +448,9 @@ body {
 
 .team__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  width: 100%;
 }
 
 .team__sign {
@@ -383,21 +460,29 @@ body {
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  width: 100%;
 }
 
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__link {
   display: flex;
-  width: 170px;
   height: 92px;
   padding: 16px 32px;
   border: 1px solid var(--social-color);
@@ -418,6 +503,20 @@ body {
 
 .clients__icon {
   fill: currentColor;
+}
+
+.clients__items {
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients__items {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__items {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .address {

@@ -1,19 +1,28 @@
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  width: 100%;
 }
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   color: var(--title-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+   line-height: 1.17;
+   margin-bottom: 50px;
+     
+   }
 }
 
 .clients__link {
   display: flex;
-  width: 170px;
+  // width: 170px;
   height: 92px;
   padding: 16px 32px;
   border: 1px solid var(--social-color);
@@ -21,6 +30,8 @@
   fill: var(--social-color);
   justify-content: center;
   align-items: center;
+
+
 }
 
 .clients__link {
@@ -36,4 +47,15 @@
 
 .clients__icon {
   fill: currentColor;
+}
+.clients__items{
+
+  width: calc((100% - 30px) / 2);
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
 }

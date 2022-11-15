@@ -1,0 +1,39 @@
+.picture__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.picture__list {
+  display: flex;
+  gap: 30px;
+}
+.picture__item {
+  width: calc((100% - 60px) / 3);
+}
+
+.picture__top {
+  position: relative;
+}
+
+.picture__text {
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  height: 70px;
+  width: 100%;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  color: var(--hero-text-color);
+  background-color: var(--background-wrap);
+}

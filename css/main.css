@@ -519,14 +519,72 @@ body {
   }
 }
 
+.footer {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--hero-background);
+}
+
+.logo--edit {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.16;
+}
+@media screen and (min-width: 1200px) {
+  .logo--edit {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.logo__wrapper {
+  color: var(--hero-text-color);
+}
+
+.container-footer {
+  display: block;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .container-footer {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-footer {
+    align-items: baseline;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    align-items: baseline;
+  }
+}
+
+.container-address {
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .container-address {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-address {
+    text-align: left;
+  }
+}
+
 .address {
   line-height: 1.71;
   color: var(--footer-color);
-}
-
-.address__link {
-  color: var(--hero-text-color);
-  transition: color 250ms var(--function);
 }
 
 .address__link {
@@ -539,34 +597,26 @@ body {
   color: var(--accent-color);
 }
 
-.footer {
-  display: block;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--hero-background);
-}
-
-.logo--edit {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.logo__wrapper {
+.address__link--color {
   color: var(--hero-text-color);
-}
-
-.container-footer {
-  display: flex;
-  align-items: baseline;
-}
-
-.container-address {
-  display: block;
 }
 
 .join {
   display: block;
-  margin-left: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .join {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+    text-align: left;
+  }
 }
 
 .join__text {
@@ -587,9 +637,18 @@ body {
 }
 
 .email {
-  display: flex;
-  align-items: flex-end;
-  margin-left: 93px;
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .email {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 93px;
+    text-align: left;
+  }
 }
 
 .email__label {
@@ -603,7 +662,7 @@ body {
 .email__imput {
   display: block;
   margin-top: 20px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-left: 15px;
   padding-right: 15px;
@@ -617,11 +676,27 @@ body {
   align-items: center;
   color: var(--footer-color);
 }
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .email__imput {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .email__imput {
+    width: 358px;
+  }
+}
 
 .btn--send {
   display: block;
+  margin-right: auto;
+  margin-left: auto;
   min-width: 200px;
-  margin-left: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .btn--send {
+    margin-left: 12px;
+  }
 }
 
 .btn__icon {

@@ -573,12 +573,14 @@ body {
 @media screen and (min-width: 768px) {
   .container-address {
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 76px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container-address {
     text-align: left;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -608,13 +610,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .join {
-    margin-right: auto;
+    margin-right: 89px;
     margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .join {
     margin-left: 70px;
+    margin-right: 0;
     text-align: left;
   }
 }
@@ -646,7 +649,8 @@ body {
   .email {
     display: flex;
     align-items: flex-end;
-    margin-left: 93px;
+    margin-left: auto;
+    margin-right: 0;
     text-align: left;
   }
 }
@@ -684,6 +688,7 @@ body {
 @media screen and (min-width: 1200px) {
   .email__imput {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 

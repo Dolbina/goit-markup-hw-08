@@ -166,12 +166,23 @@ body {
 }
 
 .header {
-  /* line header */
-  border-bottom: 1px solid #ececec;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .logo--right {
-  margin-right: 93px;
+  font-size: 24px;
+  line-height: 1.16;
+}
+@media screen and (min-width: 1200px) {
+  .logo--right {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.19;
+    /* line header */
+    border-bottom: 1px solid #ececec;
+  }
 }
 
 .logo__wrap {
@@ -222,9 +233,14 @@ body {
 }
 
 .menu {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 .navigation {
@@ -238,14 +254,45 @@ body {
 }
 
 .connect {
-  display: flex;
-  margin-left: auto;
-  gap: 30px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .connect {
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+  }
 }
 
 .connect__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+.menu__open {
+  margin-left: auto;
+  outline: transparent;
+  background-color: transparent;
+  border: none;
+}
+
+.mob-menu {
+  width: 100vw;
+  height: 100hw;
+  background-color: var(--hero-text-color);
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.mob-menu__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
 }
 
 .hero {

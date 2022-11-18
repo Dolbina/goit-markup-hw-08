@@ -1,25 +1,25 @@
 .header {
-width: 100%;
-padding-top: 10px;
-padding-bottom: 10px;
 
+@media screen and (min-width: 1200px) {
+ /* line header */
+ border-bottom: 1px solid #ececec; 
+}
  
 }
 
 .logo--right {
-  
   font-size: 24px;
 line-height: 1.16;
+
+@media screen and (min-width: 768px) {
+  margin-right: 87px;
+ 
+}
 
 @media screen and (min-width: 1200px) {
   margin-right: 93px;
   font-size: 26px;
 line-height: 1.19; 
- /* line header */
-
- border-bottom: 1px solid #ececec;
- 
-  
 }
 }
 .logo__wrap {
@@ -70,6 +70,13 @@ line-height: 1.19;
 
   transition: color 250ms var(--function);
 
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+font-size: 12px;
+line-height: 1.17;
+
+  }
+
+
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -78,12 +85,14 @@ line-height: 1.19;
 
 .menu {
   display: none;
- 
+
   @media screen and (min-width: 768px) {
- 
+    display: flex;
+    align-items: center;
+    gap: 50px;
   }
 
-  @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     gap: 50px;
@@ -96,6 +105,7 @@ line-height: 1.19;
   display: flex;
   align-items: center;
 }
+
 .header__container {
   display: flex;
   align-items: center;
@@ -103,6 +113,12 @@ line-height: 1.19;
 
 .connect {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: auto;
@@ -115,8 +131,35 @@ line-height: 1.19;
 .connect__icon {
   fill: currentColor;
   margin-right: 10px;
+
 }
 
+.connect__icon--envelope{
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-right: 8px;
+    width: 14px;
+    height: 10px;
+      }
+}
+
+
+.connect__icon--smartphone{
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-right: 8px;
+    width: 10px;
+    height: 14px;
+    
+      }
+}
+
+
+.connect__item--edit {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+  
+
+}
 
 .menu__open{
  
@@ -124,11 +167,18 @@ margin-left: auto;
 outline: transparent;
 background-color: transparent;
 border: none;
+@media screen and (min-width: 768px) {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  display: none;
+  
+}
 }
 
 .mob-menu{
   width: 100vw;
-  height: 100hw;
+  height: 100vh;
   background-color: var(--hero-text-color);
   top: 0;
   position: fixed;
@@ -136,6 +186,25 @@ border: none;
   padding-top: 48px;
   padding-bottom: 48px;
 }
+
+.mob-menu__close{
+  display: block;
+  margin-left: auto;
+outline: transparent;
+background-color: transparent;
+border: none;
+  margin-bottom: 30px;
+  fill: var(--title-text-color);
+
+  transition: fill 250ms var(--function);
+
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+  }
+
+}
+
 
   .mob-menu__container {
     height: 100%;
@@ -145,4 +214,58 @@ border: none;
     overflow: auto;
   }
 
+    .mob-menu__list{
+    font-weight: 500;
+font-size: 40px;
+line-height: 1.18;
+letter-spacing: 0.02em;
+color: var(--title-text-color);
+  }
+  
+  .mob-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .menu-connect__tel{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    
+    letter-spacing: 0.02em;
+    color: var (--accent-color);
+    margin-bottom: 32px;
+  }
+  .menu-connect__mail{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    margin-bottom: 64px;
+    
+  }
 
+  .mob-soc__list{
+    display: flex;
+    gap: 20px;
+  }
+
+  .mob-soc__item{
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22px;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+
+  .mob-soc__item:not(:last-child)::after{
+    position: absolute;
+    content: '';
+    width: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+transform: rotate(90deg);
+  }
+
+
+
+
+  

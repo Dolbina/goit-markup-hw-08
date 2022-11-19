@@ -9,8 +9,8 @@
 
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 509px;
   top: 50%;
   left: 50%;
   background-color: var(--hero-text-color);
@@ -20,6 +20,13 @@
   transform: translate(-50%, -50%) rotate(360deg);
   transition: transform 250ms var(--function), border-radius 250ms var(--function);
   padding: 40px;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  min-height: 581px;
+    
+  }
+  
 }
 
 .modal__button {
@@ -60,10 +67,16 @@
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+    
+  }
+
 }
 
 .modal__label {
@@ -125,16 +138,21 @@
   padding-bottom: 12px;
 
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+    line-height: 1.14; 
   letter-spacing: 0.01em;
-
   color: rgba(117, 117, 117, 0.5);
   transition: border-color 250ms var(--function);
 
   &:focus {
     border-color: var(--accent-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+  line-height: 1.17;
+  }
+
 }
 
 .checkbox {
@@ -145,10 +163,14 @@
 .checkbox__input {
   display: block;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-
+  font-size: 12px;
+line-height: 1.17;
   color: var(--primary-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__icon {
@@ -170,11 +192,20 @@
   display: flex;
   align-items: center;
   margin-top: 20px;
+
+  font-size: 12px;
+line-height: 1.17;
+
+@media screen and (min-width: 1200px) {
+  font-size: 14px;
+  line-height: 1.71;
+}
 }
 
 .checkbox__link {
   color: var(--accent-color);
   margin-left: 5px;
+
 }
 
 .btn--edit {

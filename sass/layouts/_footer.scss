@@ -55,6 +55,7 @@
     text-align: left;
     margin-right: 0;
     margin-left: 0;
+    margin-bottom: 0;
   }
 }
 .address {
@@ -86,12 +87,14 @@
   @media screen and (min-width: 768px) {
     margin-right: 89px;
     margin-left: auto;
+
   }
 
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
     margin-right: 0;
     text-align: left;
+    margin-bottom: 0;
   }
 }
 

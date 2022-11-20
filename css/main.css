@@ -408,11 +408,16 @@ body {
 
 .menu-connect__tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  color: var --accent-color;
+  color: var(--accent-color);
   margin-top: 32px;
+}
+@media screen and (min-width: 480px) {
+  .menu-connect__tel {
+    font-size: 34px;
+  }
 }
 
 .menu-connect__mail {
@@ -451,10 +456,15 @@ body {
 
 .mob-soc__link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 400px) {
+  .mob-soc__link {
+    font-size: 18px;
+  }
 }
 
 .hero {
@@ -472,14 +482,14 @@ body {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/mobile2x.jpg");
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
     height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/tablet.jpg");
   }
 }
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/tablet2x.jpg");
   }
@@ -498,7 +508,7 @@ body {
 }
 
 .hero__title {
-  width: 360px;
+  width: 320px;
   margin-bottom: 30px;
   margin-top: 0;
   margin-left: auto;
@@ -510,6 +520,11 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -888,6 +903,12 @@ body {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  min-width: 320px;
+}
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  .email {
+    min-width: 480px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .email {
@@ -905,12 +926,23 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--hero-text-color);
+  min-width: 320px;
+}
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  .email__label {
+    min-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .email__label {
+    min-width: 450px;
+  }
 }
 
 .email__imput {
   display: block;
   margin-top: 20px;
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding-left: 15px;
   padding-right: 15px;
@@ -923,11 +955,7 @@ body {
   line-height: 1.25;
   align-items: center;
   color: var(--footer-color);
-}
-@media screen and (min-width: 320px) and (max-width: 1200px) {
-  .email__imput {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
   .email__imput {

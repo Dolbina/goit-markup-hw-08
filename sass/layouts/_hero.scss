@@ -14,7 +14,7 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/mobile2x.jpg");
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     max-width: 768px;
     height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/tablet.jpg");
@@ -40,7 +40,7 @@
 }
 
 .hero__title {
-  width: 360px;
+  width: 320px;
   margin-bottom: 30px;
   margin-top: 0;
   margin-left: auto;
@@ -53,6 +53,11 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 480px) and (max-width: 1200px) {
+    width: 360px;
+   
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;

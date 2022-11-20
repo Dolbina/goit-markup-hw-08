@@ -137,19 +137,51 @@
           <ul class="picture__list list">
             <li class="picture__item">
               <div class="picture__top">
-                <img src="./image/keyboard.jpg" alt="Руки набирають текст на клавіатурі" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./image/keyboard.jpg 1x,
+                      ./image/keyboard-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                  src="./image/keyboard.jpg" alt="Руки набирають текст на клавіатурі" width="370" height="294"
+                  />
+                </picture>
+
                 <p class="picture__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="picture__item">
               <div class="picture__top">
-                <img src="./image/laptop.jpg" alt="В руках телефон на фоні ноутбука" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./image/laptop.jpg 1x,
+                      ./image/laptop-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                  src="./image/laptop.jpg" alt="В руках телефон на фоні ноутбука" width="370" height="294"
+                  />
+                </picture>
                 <p class="picture__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="picture__item">
               <div class="picture__top">
-                <img src="./image/palette.jpg" alt="В руках планшет, на ньому палітра кольорів" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./image/palette.jpg 1x,
+                      ./image/palette-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./image/palette.jpg" alt="В руках планшет, на ньому палітра кольорів" width="370" height="294"/>
+                </picture>
                 <p class="picture__text">Дизайнерські рішення</p>
               </div>
             </li>

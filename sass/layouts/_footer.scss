@@ -87,7 +87,6 @@
   @media screen and (min-width: 768px) {
     margin-right: 89px;
     margin-left: auto;
-
   }
 
   @media screen and (min-width: 1200px) {
@@ -122,11 +121,10 @@
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  min-width: 320px;
 
-  @media screen and (min-width: 450px) and (max-width: 767px) {
-    min-width: 480px;
-  }
+  // @media screen and (min-width: 450px) and (max-width: 767px) {
+  //   min-width: 480px;
+  // }
 
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -142,14 +140,7 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--hero-text-color);
-  min-width: 320px;
-
-  @media screen and (min-width: 450px) and (max-width: 767px) {
-    min-width: 480px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    min-width: 450px;
-  }
+  width: 100%;
 }
 
 .email__imput {
@@ -171,6 +162,10 @@
   align-items: center;
   color: var(--footer-color);
   margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 358px;

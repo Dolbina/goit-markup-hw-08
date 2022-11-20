@@ -720,7 +720,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  width: 100%;
   justify-content: center;
 }
 
@@ -747,6 +746,7 @@ body {
 
 .clients__link {
   display: flex;
+  width: 170px;
   height: 92px;
   padding: 16px 32px;
   border: 1px solid var(--social-color);
@@ -912,12 +912,6 @@ body {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  min-width: 320px;
-}
-@media screen and (min-width: 450px) and (max-width: 767px) {
-  .email {
-    min-width: 480px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .email {
@@ -935,17 +929,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--hero-text-color);
-  min-width: 320px;
-}
-@media screen and (min-width: 450px) and (max-width: 767px) {
-  .email__label {
-    min-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .email__label {
-    min-width: 450px;
-  }
+  width: 100%;
 }
 
 .email__imput {
@@ -965,6 +949,11 @@ body {
   align-items: center;
   color: var(--footer-color);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .email__imput {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .email__imput {
@@ -1095,8 +1084,7 @@ body {
 
 .modal {
   position: absolute;
-  width: 450px;
-  min-height: 509px;
+  width: 94%;
   top: 50%;
   left: 50%;
   background-color: var(--hero-text-color);
@@ -1106,9 +1094,10 @@ body {
   transition: transform 250ms var(--function), border-radius 250ms var(--function);
   padding: 40px;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 480px) {
   .modal {
-    width: 94%;
+    width: 450px;
+    min-height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {

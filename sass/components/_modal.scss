@@ -9,8 +9,8 @@
 
 .modal {
   position: absolute;
-  width: 450px;
-  min-height: 509px;
+  width: 94%;
+
   top: 50%;
   left: 50%;
   background-color: var(--hero-text-color);
@@ -21,8 +21,9 @@
   transition: transform 250ms var(--function), border-radius 250ms var(--function);
   padding: 40px;
 
-  @media screen and (min-width: 320px) and (max-width: 479px) {
-    width: 94%;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    min-height: 609px;
   }
 
   @media screen and (min-width: 1200px) {

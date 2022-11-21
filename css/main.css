@@ -171,11 +171,8 @@ body {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 1200px) {
-  .header {
-    /* line header */
-    border-bottom: 1px solid #ececec;
-  }
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 .logo--right {
@@ -990,9 +987,26 @@ body {
 
 .filter {
   display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  justify-content: start;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .filter__button {
@@ -1041,17 +1055,29 @@ body {
 }
 
 .card__item {
-  width: calc((100% - 60px) / 3);
   border: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) {
+  .card__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .card__sign {
   display: block;
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
 .card__link {
-  display: block;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow 250ms var(--function);
 }
 .card__link:hover, .card__link:focus {

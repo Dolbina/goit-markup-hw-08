@@ -396,6 +396,10 @@ body {
   color: var(--accent-color);
 }
 
+.current-mob {
+  color: var(--accent-color);
+}
+
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }

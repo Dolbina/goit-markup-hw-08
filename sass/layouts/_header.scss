@@ -58,6 +58,7 @@
   display: flex;
 }
 
+
 .connect__link {
   font-weight: 500;
   line-height: 1.14;
@@ -222,6 +223,9 @@
   
 }
 
+.current-mob{
+  color: var(--accent-color);
+}
 
 
 .mob-menu__item:not(:last-child) {
